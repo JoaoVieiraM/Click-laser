@@ -34,7 +34,7 @@
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     :root {
-        --section-padding: 60px 0;
+        --section-padding: 40px 0;
     }
 
     /* Header */
@@ -56,6 +56,12 @@
         display: block;
     }
 
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
     .hero-content {
         padding-top: 100px;
         text-align: center;
@@ -63,21 +69,43 @@
 
     .hero-text-wrapper {
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
     }
 
     .hero-actions {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
     }
 
     .hero-badges {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        width: 100%;
+    }
+
+    .badge {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
     }
 
     .scroll-indicator {
@@ -86,7 +114,16 @@
 
     /* About */
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image-wrapper {
+        max-width: 100%;
     }
 
     /* Tech */
@@ -108,6 +145,25 @@
         margin-right: 0;
     }
 
+    /* Testimonials */
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .quote-mark {
+        font-size: 3rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+
+    /* FAQ */
+    .faq-question {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
     /* Footer */
     .footer-container {
         grid-template-columns: 1fr;
@@ -121,18 +177,28 @@
 
     /* Final CTA */
     .final-cta-headline {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .final-cta-sub {
+        font-size: 1rem;
+    }
+
+    .final-cta-button {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 1rem;
     }
 }
 
 /* Small Mobile (max-width: 375px) */
 @media (max-width: 375px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .btn-primary {
-        padding: 14px 24px;
+        padding: 12px 20px;
         font-size: 0.8rem;
     }
 }
