@@ -1,0 +1,20 @@
+/* Animations CSS defined in main style or handled by GSAP */
+/* Placeholder for any pure CSS animations if needed */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite ease-in-out;
+}
